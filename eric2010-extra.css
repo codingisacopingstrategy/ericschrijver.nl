@@ -1,0 +1,20 @@
+.modal {
+  width: 640px;
+  height: 480px;
+  z-index: 9999;
+  background-color: #fac8dc;
+  left: 50%;
+  top: 50%;
+  margin-left: -320px;
+  margin-top: -240px;
+  position: absolute;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em; }
+  .modal img {
+    float: right; }
+  .modal div.float {
+    position: static;
+    float: right;
+    clear: both;
+    margin-top: 6em; }

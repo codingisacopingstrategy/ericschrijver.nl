@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+<service>
+<engineName>Movable Type Pro 4.31-en</engineName>
+<engineLink>http://www.sixapart.com/movabletype/</engineLink>
+<homePageLink>http://www.ericschrijver.nl/</homePageLink>
+<apis>
+<api name="MetaWeblog" preferred="true" apiLink="http://www.ericschrijver.nl/edulab/mt-xmlrpc.cgi" blogID="8" />
+<api name="MovableType" preferred="false" apiLink="http://www.ericschrijver.nl/edulab/mt-xmlrpc.cgi" blogID="8" />
+<api name="Blogger" preferred="false" apiLink="http://www.ericschrijver.nl/edulab/mt-xmlrpc.cgi" blogID="8" />
+<api name="Atom" preferred="false" apiLink="http://www.ericschrijver.nl/edulab/mt-atom.cgi/weblog" blogID="8" />
+</apis>
+</service>
+</rsd>

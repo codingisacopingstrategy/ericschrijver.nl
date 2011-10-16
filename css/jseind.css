@@ -1,0 +1,21 @@
+/* deze stylesheets worden geladen met document.write zodat ze alleen geladen worden als er javascript is */
+/* bedankt voor de tip http://www.quirksmode.org/blog/archives/2005/06/three_javascrip_1.html */
+
+.isMeta {
+	visibility:hidden;
+}
+
+.photofooter {
+	visibility:hidden;
+}
+
+
+.weg {
+	display:none;
+}
+
+.verborgen {
+	height: 10em;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}

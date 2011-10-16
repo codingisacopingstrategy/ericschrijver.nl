@@ -1,0 +1,21 @@
+AddHandler php-script .php
+AddType text/html .php
+AddOutputFilterByType DEFLATE text/html text/css application/x-javascript
+Options +FollowSymlinks
+# Options +MultiViews
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+AddHandler php5-script .php
+
+# Redirect www to non-www
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.ericschrijver.nl$ [NC]
+RewriteRule ^(.*)$ http://ericschrijver.nl/$1 [R=301]
+
+# If extensionless page URL with ".php" added resolves to an existing file
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+# rewrite extensionless page URL to .php file
+RewriteRule ^(([^/]+/)*[^./]+)$ /$1.html [L]
+

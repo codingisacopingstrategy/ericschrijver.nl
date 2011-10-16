@@ -1,0 +1,100 @@
+///////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+  _                                       _     _                         ___ 
+ /    _        ._   _|_  ._         _   _|_    / \  ._  o   _   o  ._      |  
+ \_  (_)  |_|  | |   |_  |   \/    (_)   |     \_/  |   |  (_|  |  | |    _|_ 
+                             /                              _|                
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\//////////////////////////////////////////
+	             _   _      _     _                                      _     
+                    | | | |    | |   | |                                    | |    
+ __      __   __ _  | | | | __ | |_  | |__    _ __    ___    _   _    __ _  | |__  
+ \ \ /\ / /  / _` | | | | |/ / | __| | '_ \  | '__|  / _ \  | | | |  / _` | | '_ \ 
+  \ V  V /  | (_| | | | |   <  | |_  | | | | | |    | (_) | | |_| | | (_| | | | | |
+   \_/\_/    \__,_| |_| |_|\_\  \__| |_| |_| |_|     \___/   \__,_|  \__, | |_| |_|
+                                                                      __/ |        
+                                                                     |___/        
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\////////////////////////////////////////// 
+///////////////////////////by Craftsmansheep54 16/08/2007\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+0 points out of 185
+
+You are near your house. Look around. Look at the water, look for the ocean, look at the ground. Try and go back in. Walk one screen to the east. Look around. Move one street to the north. You are at the Grand Market sqaure. Look around. Try to take the bicycle. Walk into the black rider bar. You see your brother Riley is also present.
+
+>talk riley
+
+Laurens explains the basics of the game. He also advises you to find your friend Josie and talk to her.
+
+You don't want to do that just yet. Move outside. Walk one screen to the south and one screen to the east. Look at the supermarket, look at the warehouse. Try and go inside. Try and walk east in the direction of the train station.
+
+Walk back to the Grand Market square again, then walk one screen to the west. You are near your studio complex. Look around. Walk into the studio-complex. You see your friend Roland is also present. Talk to Roland. Try and take the elevator. Go outside again.
+
+Move north. You are in the Von Vesselstreet. Look around. Enter through the open door. Look around. Try to take a book or to lay on the couch.
+
+Talk about love, death, space, time, art and life with Francis. Shift to your romantic paradigm and try to talk with Francis, shift back to your pragmatic paradigm. Talk to Josie about everything.
+
+>talk art josie
+>shift paradigm romanticist
+>talk art josie
+
+Because of Josie's involvement in academic art history she uses conceptual techniques that have evolved from a romantic paradigm into mainly neo-marxist paradigm. By talking to her about art you acquire the marxist paradigm, your first new paradigm in the game!
+
+34 points out of 185
+
+If you would now talk to Riley again he would advise you to use your new paradigm to talk to Josie again.
+
+>shift paradigm marxist
+>talk art josie
+
+Through Josie you start acquiring the gestalt of the the field of cultural studies, a field that seems to have incorporated a lot of post-structuralist notions next to the neo-marxist notions. You gain your second paradigm, the post-structuralist paradigm.
+
+76 points out of 185
+
+Walk back to the black rider bar.
+
+>talk riley
+
+Riley tells you to talk to Roland about the objective of your quest. If you haven't done so already, move outside, one screen to the east and then inside, and
+
+>talk space roland
+or:
+>talk time roland
+
+Contrary to your desire to embody space and time Roland tells you to transcend it. Ah well. Transcendence and embodiment might just be two sides of the same coin. Anyway, you would need the classicist paradigm for that, Roland explained. So how to get that? Go back to the bar.
+
+>talk riley
+
+He explains to you how your friend Francis is in possession of two paradigms. Basically the same two that you started of with, the romanticist and the pragmaticist. Go back to the Von Vesselstreet. Shift to your pragmatic paradigm. Talk about love, death, space, time, art and life with Francis.
+
+>shift paradigm romanticist
+notice how the following subjects rend different responses then the same subjects in the pragmaticist paradigm:
+>talk love bastian
+>talk death bastian
+>talk live bastian
+>talk art bastian
+>talk space bastian
+>talk time bastian
+
+You have talked with Bastian on love, death, art, live, space and time. And here comes a pleasant surprise! Together you have so thoroughly contemplated the tragedy of humanity that you gain the ability of transcendence.
+
+133 points out of 185
+
+Go to the bar.
+
+>talk riley
+
+So what to transcend? You try and transcend love, death, art and life. But remember what Roland said!
+
+>transcend time
+or
+>transcend space
+
+But this is not working. You need another paradigm. And the unlikely truth is that the ideal starting point for your specific brand of transcendence consists of a post-structuralist paradigm.
+
+>shift paradigm poststructuralist
+
+>transcend time
+or
+>transcend space
+
+185 points out of 185
+
+You've acquired the classicist paradigm. You can judge concepts jenseits of space and time. You've won!

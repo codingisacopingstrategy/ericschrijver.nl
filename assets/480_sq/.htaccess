@@ -1,0 +1,6 @@
+Options +MultiViews
+Options +Indexes
+IndexIgnore thmb *.jpg *.svg *.png *.swf
+IndexOptions FancyIndexing XHTML HTMLTable
+AddType image/svg+xml svg
+AddType image/svg+xml svgz

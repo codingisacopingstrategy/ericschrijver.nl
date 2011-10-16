@@ -1,0 +1,55 @@
+
+$body: 80%;
+$font-family: Helvetica, Nimbus Sans, Arial, sans-serif;
+
+$striking-colour: #000000;
+$less-striking-colour: #e3e3e3;
+
+@import "../base";
+
+div.pagina, div.page {
+  @include width(2);
+  float: left;
+}
+
+div.pagina, div.header {
+  @include margin(0,0);
+  margin-left: 3em;
+}
+
+div.assets, div.aside {
+  @include margin(0,0);
+  margin-top: 1.9em;
+  margin-left: 3em;
+}
+
+div.nav {
+  margin-left: 3em;
+}
+
+div.wrap {
+  width: 72em;
+}
+
+div.header {
+  width: 72em;  
+}
+
+p {
+  font-size: 1emy;
+  width: $pwidth;
+  padding: 0em 0em;
+  margin: 1em 0em;
+  line-height:140%;
+  text-indent:0em;
+}
+
+.header h1 {
+ font-family: serif; 
+}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+}

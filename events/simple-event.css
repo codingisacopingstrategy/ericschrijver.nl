@@ -1,0 +1,124 @@
+body {
+background-color:#FFF;
+font-family:'CharterBT', Georgia, serif;
+font-size:68.75%;
+font-weight:400;
+margin:0;
+color:#000;
+line-height:140%;
+}
+
+div {
+margin:0;
+padding:1em;
+border:0;
+display:block;
+position:absolute;
+vertical-align:top;
+z-index:100;
+background-image:url(lijnen_20.png);
+}
+
+div.pagina {
+left:1em;
+top:2em;
+margin-top:10em;
+width:49em;
+background-image:none;
+background-color:transparent;
+z-index:200;
+}
+
+div.header {
+z-index:400;
+width:49em;
+left:1em;
+top:1em;
+margin-left:0;
+height:8em;
+}
+
+div.tooltip {
+width:16em;
+color:gray;
+font-style:italic;
+padding:0;
+}
+
+div.tooltip div {
+width:100%;
+}
+
+div.contentWrapper {
+visibility:hidden;
+padding:0;
+width:100%;
+height:100%;
+z-index:900;
+background-image:url(lijnen_fd_70.png);
+}
+
+div.contentWrapper .pagina {
+z-index:1000;
+}
+
+h1, h2, h3, h5 {
+margin:.3em 0 .2em;
+font-weight:400;
+font-family:'CharterBT', Georgia, serif;
+color:#fd297e;
+width:auto;
+line-height:140%;
+letter-spacing:-.08em;
+text-transform:lowercase;
+}
+
+h1 {
+font-size:4em;
+line-height:100%;
+margin-top:0;
+}
+
+h2 {
+font-size:2.25em;
+line-height:100%;
+text-transform:lowercase;
+}
+
+h3 {
+text-transform:lowercase;
+font-size:1.5em;
+}
+
+h5 {
+text-transform:lowercase;
+font-size:1.25em;
+font-style:italic;
+}
+
+img {
+display:block;
+background-color:#fac8dc;
+background-image:url(fill_10_roze.png);
+margin:0;
+padding:0;
+border:0;
+}
+
+:target {
+border:.1em dashed #fffb00;
+}
+
+dl {
+  font-size:2em;
+  width: 60em;
+}
+dt {
+  font-style:italic;
+  font-size:1em;
+  color:#cccccc;
+}
+dd {
+  margin-left:10em;
+  line-height:2em;
+}

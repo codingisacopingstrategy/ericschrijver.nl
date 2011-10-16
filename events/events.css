@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color:#FFF;
+font-family:'CharterBT', Georgia, serif;
+font-size:68.75%;
+font-weight:400;
+color:#000;
+line-height:140%;
+}
+
+div {
+padding:1em;
+display:block;
+position:absolute;
+vertical-align:top;
+z-index:100;
+background-image:url(lijnen_20.png);
+}
+
+div.pagina {
+left:16em;
+top:2em;
+margin-top:10em;
+width:49em;
+background-image:none;
+background-color:transparent;
+z-index:200;
+}
+
+.pagina div {
+margin-left:auto;
+margin-right:auto;
+margin-bottom:2em;
+position:static;
+background-color:transparent;
+padding:2em;
+background-image:url(fill_50.png);
+}
+
+div.header {
+z-index:400;
+width:49em;
+left:1em;
+top:1em;
+height:8em;
+}
+
+p {
+z-index:150;
+font-size:1.1em;
+width:25em;
+padding:0 1em;
+margin:1em 0;
+text-align:left;
+line-height:140%;
+text-indent:-.5em;
+}
+
+h1, h2, h3, h5 {
+margin:.3em 0 .2em;
+font-weight:400;
+font-family:'CharterBT', Georgia, serif;
+color:#fd297e;
+width:auto;
+line-height:140%;
+letter-spacing:-.08em;
+text-transform:lowercase;
+}
+
+h1 {
+font-size:4em;
+line-height:100%;
+margin-top:0;
+}
+
+h1 span {
+    font-size: 16px;
+    letter-spacing: none;
+}
+
+h2 {
+font-size:2.25em;
+line-height:100%;
+text-transform:lowercase;
+}
+
+h3 {
+text-transform:lowercase;
+font-size:1.5em;
+}
+
+h5 {
+text-transform:lowercase;
+font-size:1.25em;
+font-style:italic;
+}
+
+ul {
+list-style:none;
+padding:1em;
+}
+
+dl {
+list-style:none;
+padding:1em;
+padding-right:2.5em;
+width:12.5em;
+}
+
+li, dd, dt {
+margin-bottom:.5em;
+}
+
+dt {
+padding-left:.7em;
+padding-right:.5em;
+padding-bottom:.2em;
+}
+
+dd {
+margin-left:.3em;
+padding-left:2.1em;
+padding-bottom:.8em;
+}
+
+#events dl {
+  font-size:1.6em;
+  width: 100%;
+}
+
+#events dt {
+  font-style:italic;
+  font-size:0.8em;
+  color:#cccccc;
+}
+
+#events dd {
+  margin-left:6em;
+  font-size: 0.9em;
+  line-height:1.6em;
+}
+
+#events a.external {
+  border-bottom: 1px solid #369aff;
+}
+
+
+img {
+display:block;
+background-color:#fac8dc;
+background-image:url(/css/fill_10_roze.png);
+border:0;
+}
+
+a {
+color:#fd297e;
+text-decoration:underline;
+}
+
+#events a {
+color: #000000;
+border-bottom: 1px solid #fd297e;
+text-decoration: none;
+}
+
+:target {
+border:.1em dashed #fffb00;
+}
+
+dd.performance {
+background:url(/assets/performance.png) no-repeat bottom left;
+}
+
+dd.screening {
+background:url(/assets/screening.png) no-repeat bottom left;
+}
+
+dd.exhibition {
+background:url(/assets/exhibition.png) no-repeat bottom left;
+}
+
+dd.publication {
+background:url(/assets/publication.png) no-repeat bottom left;
+}
+
+dl.events {
+background:url(/assets/event.png) no-repeat top left;
+}
+
+.nav {
+right:2em !important;
+}
+
+a:active, a:hover {
+color:#FFF;
+background-color:#fd297e;
+}

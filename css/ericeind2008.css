@@ -1,0 +1,1136 @@
+/*  stylesheet ericschrijver.nl
+    (c) eric schrijver 2008-2009
+*/
+
+/*  #fd297e #fe94be #fac8dc
+    black #808080
+    #369aff #9accff
+    #00ff00
+*/
+/*
+@font-face {
+  font-family: "CharterBT";
+  src: url("CharisSILR_subs.ttf")
+       format("TrueType");
+  font-weight:  400;
+  font-style:   regular;
+  font-variant: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "CharterBT";
+  src: url("CharisSILI_subs.ttf")
+       format("TrueType");
+  font-weight:  400;
+  font-style:   italic;
+  font-variant: normal;
+  font-stretch: normal;
+}*/
+
+/*-- body elements --*/
+
+body {
+	background-color:white;	 
+	font-family: 'CharterBT', Georgia, serif;
+	font-size: 68.75%;
+	font-weight: normal;
+	margin:0em;
+	color: black;
+	line-height: 140%;
+    background-image: url(grijs_32_16.png);
+}
+ 
+    body#inaudiblemmviii {
+    font-family: futura, sans-serif;
+    }
+    
+    body#authoritism {
+    font-size:140%;
+    line-height:120%;
+    }
+
+    body#authoritism div {
+    position:static;
+    background-image: none;
+    }
+
+    body#authoritism div.focus {
+    position:static;
+    padding-left:6em;
+    padding-top:2em;
+    }
+
+    
+    body#authoritism p {
+    margin-bottom:.6em;
+    margin-top:0;
+    }
+    
+    body#authoritism h1, body#authoritism h2 {
+    line-height:100%;
+    }
+
+    body#authoritism .contextbalk, body#authoritism .contextblok {
+    font-size: 0.8em;
+    line-height:100%;
+    margin:0;
+    }
+    
+    body#authoritism .contextblok {
+    position: fixed;
+    right:8%;
+    }
+
+    body#authoritism .contextbalk p, body#authoritism .contextblok p {
+    }
+
+    body#authoritism .contextbalk code, body#authoritism .contextblok code {
+    font-size: 0.9em;
+    }
+
+    body#authoritism .comments {
+    padding:1em;
+    font-size:0.8em;    
+    padding-left:4em;
+    }
+    
+    body#authoritism hr {
+    width:80;
+    color:grey;
+    }
+
+    body#authoritism li {
+    width:100%;
+    }
+    
+table, tr, td {
+    border-width: 0;
+    border-spacing: 0;
+    padding:0;
+    margin:0;
+}
+
+div {
+	margin:0em;
+	padding:1em;
+	border: 0em;
+	display:block;
+	position:absolute;
+	vertical-align:top;
+	z-index:100;
+    background-image:url(lijnen_20.png);
+}
+
+
+/*-- divisions --*/
+
+
+div.pagina {
+	left:50%;
+	top:2em;
+    margin-top:10em;
+	margin-left:-32em;
+	padding:0em;
+    min-width:32em;
+    background-image: none;
+    background-color:transparent;
+    z-index:200;
+}
+
+	#home .pagina {
+        left: 2em;
+        right:3em;
+        margin-left:16em;
+        margin-right:32em;
+        top:2em;
+        background-image: url(lijnen_fd_20.png);
+	}
+
+	#pourenfinir .pagina {
+        left: 2em;
+        margin-left:16em;
+        overflow:hidden;
+	}
+
+	#benevenweg .pagina {
+		margin-left:-34em;
+	}
+
+	#countryoforigin_pagina {
+		margin-left:-32em;
+	}
+
+	#home_pagina2 {
+		margin-left:2em;
+	}
+
+	#about .pagina {
+		margin-left:16em;
+		left:1em;
+        min-width:32em;
+        width:48em;
+	}
+
+	#inaudible .pagina {
+		margin-left:-16em;
+    }
+                
+    #tekstenuitleg .pagina {
+        margin-left:-25em;
+    }
+    
+    #werktiteltekst .pagina {
+        left:0;
+        right:0;
+        width:44em;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+.pagina div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	position: static;
+    background-color: transparent;
+    padding:2em;
+    background-image:url(fill_50.png);
+}
+
+	#tekstenuitleg .pagina div
+	{
+		width:50em;
+	}
+
+	#pourenfinir .pagina div
+	{
+		width:76.8em;
+	}
+
+div.navl {
+    top:1em;
+    left:1em;
+    margin-top:10em;
+    margin-left:0em;
+    width:14em;
+    height:18em;
+	z-index:200;
+}
+	#home .navl {
+        left:inherit;
+        top: 1em;
+        right:1em;
+        margin-top:0em;
+        width:33em;
+        height:10em;
+        padding:0em;
+        background-image:none;
+	}
+    
+    #quejesois .navl {
+        position: fixed;
+        background-image:none;
+        background-color:transparent;
+    }
+    
+div.header {
+	z-index:400;
+	width:47em;
+	left:1em;
+	top:0em;
+    margin-left:0em;
+    height:8em;
+}
+
+	#home .header {
+        padding:0em;
+		top:1em;
+        left:2em;
+        right:1em;
+        margin-left:16em;
+        margin-right:32em;
+        height: inherit;
+        height:10em;
+        min-width:30em;
+        z-index:0;
+	}
+    
+    #quejesois .header {
+        background-image:none;
+        background-color:transparent;
+    }
+div.assets {
+	z-index:300;
+	width:16em;
+	height:auto;
+	top:2em;
+    left:1em;
+    margin-top:30em;
+	color: #808080;
+    padding:0;
+}
+
+	#about .assets {
+        left:2em;
+        margin-top:10em;
+        margin-left:64em;
+	}
+    
+	#home .assets {
+		top:1em;
+		left:1em;
+	}
+    
+    #explainsreality .assets {
+        margin-top: 16em;
+    }
+    
+    #inaudible .assets {
+		width:60em;
+	}
+
+div.contextblok {
+    top:1em;
+    right:1em;
+    margin-top:10em;
+    margin-right:0em;
+    width:14em;
+    height:18em;
+	z-index:300;
+}
+
+    #home div.contextblok {
+        position:absolute;
+        padding:0;
+        width: 16em;
+    }
+
+            #home div.contextblok h2 {
+                margin:0;
+        }
+
+div.contextbalk
+{
+	z-index:300;
+	top:2em;
+    right:1em;
+    margin-top:30em;
+	display:block;
+	width:14em;
+	color: #808080;
+    padding:1;
+}
+	
+	#about .contextbalk {
+		top:2em;
+        left:3em;
+        margin-top:10em;
+		margin-left:80em;
+	}
+    
+    #home .contextbalk {
+        margin-top:20em;
+    }
+    
+    #explainsreality .contextbalk {
+        margin-top:16em;
+    }
+
+
+/*-- div-nav --*/
+    
+table.navr {
+	position:fixed;
+	display:block;
+	right:0em;
+	top:0;
+	z-index:300;
+    border: 0;
+    border-spacing: 0;
+}
+
+	table.navr div {
+        position:static;
+        width:6.5em;
+        outline: solid #fe94be 1pt;
+        background-image: url(fill_90.png);
+	}
+
+        table.navr td {
+            vertical-align:top;
+        }
+
+div.benevolent {
+    margin:0;
+    padding:0;
+    position:fixed;
+    left:1em;
+    top:.3em;
+}
+
+    div.benevolent p {
+        margin:0;
+        padding:0;
+        text-indent:0;
+        width:100%;
+        text-transform: lowercase;
+        z-index:0;
+    }
+/*-- div-tooltip --*/
+
+div.tooltip {
+	width:16em;
+	color: #808080;
+	font-style: italic;
+    padding: 0;
+}
+
+	div.tooltip div {
+		width:100%;
+	}   
+
+div.imagetip {
+	color:#fd297e;
+	text-transform:uppercase;
+    padding: 0;
+}
+
+	div.imagetip div {
+		width:16em;
+	}
+    
+.tooltip .tip-text, .imagetip .tip-text {
+	display:none;
+}
+
+div.tip {
+    padding: 0;
+}
+
+/*-- comments --*/
+
+div.comments, div.comments * {
+    padding:0;
+    margin:0;
+}
+
+.comments label {
+    padding:1em;
+}
+
+.comments div div div div {
+    padding:.5em;
+}
+
+.comments input {
+    float: right;
+}
+
+/*-- text elements (p,blockquote) --*/
+
+p {
+	z-index:150;
+	font-size: 1.1em;
+	width: 25em;
+	padding: 0em 1em;
+	margin: 1em 0em;
+	text-align: left;
+    line-height:140%;
+	text-indent:-.5em;
+}
+
+	p.naarrechts {
+		margin:0;
+		padding:0;
+		text-align:right;
+	}
+
+		.smal p, .assets p, .wat p, .waarom p, .contextbalk p, .contextblok p {
+			font-size: inherit;
+			width:14em; /* inherit-1em zou moeten kunnen kankertaal! */
+			text-align:left;
+		}
+        
+        .assets dl p, .assets ol p, .assets ul p, .contextbalk dl p, .contextbalk ol p, .contextbalk ul p, .navl dl p, .navl ol p, .navl ul p {
+            padding:0 !important;
+            width: 10.5em !important;
+        }
+		
+		#home .pagina p {
+			width:100%;
+			text-align:inherit;
+			padding:0;
+		}
+        
+        #home p.isMeta {
+            height:2em;
+        }
+
+blockquote {
+	font-family: 'CharterBT', Georgia, serif;
+	font-style: italic;
+	font-size: 9pt;
+	line-height: 140%;
+    padding:0;
+    margin:0;
+    letter-spacing:-.08em;
+}
+
+
+.contextbalk blockquote, #tekstenuitleg blockquote, .contextblok blockquote {
+	font-family: 'CharterBT', Georgia, serif;
+	font-style: italic;
+	font-size: 10pt;
+	line-height: 14pt;
+	color: #fd297e;
+	text-indent: -.5em;
+	padding: 0;
+	font-weight:normal;
+}
+	#home_contextbalk blockquote {
+		padding: 0;
+		font-size: 9pt;
+		font-style: normal;
+	}
+
+	#tekstenuitleg blockquote {
+		color: black;
+        letter-spacing: 0;
+        line-height: 15pt;
+	}
+
+	#paradogma_contextbalk blockquote {
+		color: #00ff00;
+	}
+
+	#benevenweg_contextbalk blockquote {
+		color: #424242;
+		font-family: helvetica, arial, geneva, sans-serif;
+		font-style: normal;
+		font-size: 12pt;
+		line-height: 12pt;
+	}
+    
+     #inaudiblemmviii .contextbalk blockquote {
+        font-family: futura, sans-serif;
+        font-style: normal;
+     } 
+
+.contextbalk blockquote.altlang, #tekstenuitleg .contextbalk blockquote.altlang {
+	font-family: inherit;
+	font-style: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-style: italic;
+	color: #808080;
+    float: right;
+	right: 0;
+	margin-top: .5em;
+	margin-right: .5em;
+    padding-left:2em;
+    margin-bottom:1.5em;
+}
+
+/*extWrap*/
+div.contentWrapper {
+    visibility:hidden;
+    padding:0;
+    width:100%;
+    height:100%;
+    z-index:900;
+    background-image:url(lijnen_fd_70.png);
+}
+
+    div.contentWrapper .pagina {
+    z-index:1000;
+    }
+/*-- --*/
+
+/*-- headings --*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.3em 0em 0.2em 0em;
+	font-weight: 400;
+	font-family: 'CharterBT', Georgia, serif;
+	color: #fd297e;
+	width:auto;
+    line-height: 140%;
+    letter-spacing:-.08em;
+    text-transform: lowercase;
+}
+
+#home h6 {
+	color: black;
+}
+
+h1 {
+	font-size: 4em;
+	line-height: 100%;
+	margin-top:0;
+}
+
+    #home .header h1, #home .header h2, #home .header h3 {
+        display:inline;
+    }
+    
+    #home .header h3 {
+        position: fixed;
+        right:1em;
+        top:0;
+        margin-left:1em;
+    }
+    
+	#benevenweg .header h1 {
+		font-size: 3em;
+		font-family: helvetica, arial, geneva, sans-serif;
+		font-weight: bold;
+		color: black; 
+	}
+
+	#explainsreality .header h1 {
+		font-size: 3em;
+		line-height: 0.8em;
+		font-family: helvetica, arial, geneva, sans-serif;
+		font-weight: bold;      
+	}
+    
+    #inaudiblemmviii .header h1 {
+        font-family: futura, sans-serif;
+        font-weight: bold;
+    }
+    
+    #quejesois .header h1 {
+        font-size: 2em;
+    }
+    
+         h1 span {	 
+            font-family: helvetica, arial, geneva, sans-serif;
+            font-size: 10pt;
+            font-weight: normal;
+            font-weight: inherit;
+            color: #808080;
+            position: absolute;
+            bottom: 0;
+            padding:0;
+            right: 3.5em;
+            letter-spacing:0em;
+         }     
+
+h2 {
+	font-size: 2.25em;
+	line-height: 2.25em;
+	text-transform: lowercase;
+}
+	#authoritism h2 {
+    font-style:italic;
+	}
+
+	#explainsreality .header h2 {
+		font-size: 2em;
+		font-family: helvetica, arial, geneva, sans-serif;
+		font-weight: bold;      
+	}
+    
+    #quejesois .header h2 {
+        font-size: 1.5em;
+    }
+
+h3 {
+	text-transform: lowercase;
+	font-size: 1.5em;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-style: italic;
+	border: .2em solid #fd297e;
+	padding:0;
+	font-size: 1.25em;
+}
+
+h5 {
+	text-transform: lowercase;
+	font-size: 1.25em;
+    font-style: italic;
+}
+
+	#about .pagina h5 {
+		max-width:100%;
+		width:30em;
+	}
+
+	#benevenweg .pagina h5, #benevenweg .assets h5, #benevenweg .navl h5 {
+		color: black;
+		text-transform:none;
+	}
+
+h6 {
+	text-transform: lowercase;
+	font-size: 1em;
+	font-style: italic;
+}
+
+#tekstenuitleg .header h1, #tekstenuitleg .header h2, #tekstenuitleg .header h3, #tekstenuitleg .header h4, #tekstenuitleg .header h5, #tekstenuitleg .header h6, #tekstenuitleg .pagina h5, #tekstenuitleg .contextbalk h5, #tekstenuitleg .navl h5, #tekstenuitleg .tooltip, #tekstenuitleg .imagetip {
+	color: #369aff;
+}
+
+#paradogma .header h1, #paradogma .header h2, #paradogma .header h3, #paradogma .header h4, #paradogma .header h5, #paradogma .header h6, #paradogma .pagina h5, #paradogma .contextbalk h5, #paradogma .navl h5 {
+	color: #00ff00;
+}
+
+/*-- lists and list elements --*/
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:1em;
+}
+
+    #inaudible ul {
+		display:inline-block;
+		vertical-align:top;
+	}
+    
+dl, ol {
+	list-style:none;
+	margin:0;
+	padding:1em;
+    padding-right:2.5em;
+    width: 12.5em;
+}
+    
+    #home .pagina ol.tags {
+        padding:1em;
+        padding-right:1.5em;
+        margin-left:0;
+        margin-right:0;
+        width:auto;
+        line-height:24pt;
+        color: #fac8dc;
+    }
+
+li,dd,dt {
+	margin:0;
+	margin-bottom:0.5em;
+}
+    
+dt {
+	padding-left:.7em;
+	padding-right:.5em;
+	padding-bottom:.2em;
+}
+
+dd, ol li {
+	margin-left:.3em;
+	padding-left:2.1em;
+	padding-bottom:.8em;
+}
+   
+    li.tag {
+        padding-bottom:0em;
+        display:inline;
+        font-size:24pt;
+        letter-spacing:150%;
+        padding:0;
+    }
+    
+    .assets dd, #home .contextbalk dd, #listofsketches dt {
+        color: #fe94be;
+        font-style: italic;
+    }
+    
+        #about .assets dd {
+            color: inherit;
+            font-style: inherit;
+        }
+        
+        #home .assets dd {
+            color: inherit;
+            font-style: inherit;
+        }
+
+    .structure dd {
+        color: #fd297e;
+    }
+	
+/*images */
+
+img {
+	display:block;
+	background-color:#fac8dc;
+	background-image: url(fill_10_roze.png);
+	margin:0em;
+	padding:0em;
+	border:0em;
+}
+
+.contextbalk img {
+    outline: dotted 1pt #fac8dc;
+    padding: .4em;
+    background-color: white;
+    background-image: none;
+}
+
+a img {
+	border:0em;
+}
+
+#home .pagina dl img {
+    display: absolute;
+}
+
+img.square {
+	height:6em;
+	width:6em;
+	outline: dashed #fe94be 1pt;
+}
+
+img.pict {
+    background-color:transparent;
+    background-image:none;
+    margin-left:1em;
+}
+
+#tekstenuitleg_pagina img {
+	background-color:#ebf5ff;
+	background-image: url(fill_10_blauw.png);
+}
+
+img.dubbel, img.onderdubbel:hover {
+	filter:alpha(opacity=0);
+	-khtml-opacity:0;
+	-moz-opacity:0;
+	opacity:0;
+}
+
+#home .contextbalk img {
+	filter:alpha(opacity=50);
+	-khtml-opacity:.5;
+	-moz-opacity:.5;
+	opacity:.5;
+}
+
+img.dubbel:hover, #home .contextbalk img:hover {
+	filter:alpha(opacity=100);
+	-khtml-opacity:1;
+	-moz-opacity:1;
+	opacity:1;
+}
+
+/*links*/
+
+a {
+	color: #fd297e;
+	text-decoration: underline;
+}
+
+	#home #contextbalk dt a {
+		color: black;
+		text-decoration: none;
+		border-bottom: 1pt solid #fd297e;
+	}
+
+	.structure a, .navr a, #home_abouteric a {
+	    text-decoration:none;
+	}
+
+#benevenweg a {
+	color: black;
+	font-weight: bold;
+}
+
+#benevenweg a:hover {
+	color: white;
+	background-color: black;
+}
+
+.pagina h5 a {
+	text-decoration:underline;
+}
+
+a:active {
+	color: white;
+	background-color:#fd297e;
+}
+
+:target {
+	border: .1em dashed #fffb00;
+}
+
+/*transforms*/
+
+.isPolitics {
+    background-color: white;
+}
+
+.volledig {
+    height:100%;
+    width:100%;
+}
+
+.bovenaan {
+    font-size:8pt;
+    height:10em;
+    vertical-align:bottom;
+    padding:0;
+    position:static;
+}
+
+    .assets .bovenaan, .contextbalk .bovenaan {
+        border-bottom: 1pt #fe94be dashed;
+    }
+
+.smal {
+	width:16em !important;
+}
+
+.mindersmal {
+	width:20em;
+}
+
+.beperktinbreedte {
+	width:29em;
+}
+
+.naarrechts {
+	position: absolute;
+	right:0;
+	top:auto;
+}
+
+.zichtbaar {
+	visibility:visible;
+}
+
+.onzichtbaar {
+	visibility:hidden;
+}
+
+.highlight {
+	background-color: #fffb00;
+}
+
+#tekstenuitleg_assets a, #tekstenuitleg_assets h2, #tekstenuitleg_assets h3, #tekstenuitleg_assets h4, #tekstenuitleg_assets h5, #tekstenuitleg_navr a, #tekstenuitleg_navr h5, #tekstenuitleg_navl h5 {
+	color:#9accff;
+}
+
+#tekstenuitleg .pagina a, #tekstenuitleg .navl a {
+	color: #369aff;
+}
+
+#tekstenuitleg #pagina a:hover, #tekstenuitleg .navl a:hover, #tekstenuitleg .navr a:hover {
+	color: white;
+	background-color: #369aff;
+}
+
+a:hover {
+	color: white;
+	background-color:#fd297e;
+}
+
+
+
+
+/* --start css defines icons that identify entries-- */
+
+	dd.performance, li.performance {
+		background: url(http://www.ericschrijver.nl/assets/performance.png) no-repeat bottom left;
+	}
+
+	dd.screening, li.screening, dd.video {
+		background: url(http://www.ericschrijver.nl/assets/screening.png) no-repeat bottom left;
+	}
+
+	dd.exhibition, li.exhibition {
+		background: url(http://www.ericschrijver.nl/assets/exhibition.png) no-repeat bottom left;
+	}
+
+	dd.publication, li.publication {
+		background: url(http://www.ericschrijver.nl/assets/publication.png) no-repeat bottom left;
+	}
+
+	dd.person, li.person {
+		background: url(http://www.ericschrijver.nl/assets/person.png) no-repeat bottom left; 
+	}
+
+	dd.company, li.company {
+		background: url(http://www.ericschrijver.nl/assets/company.png) no-repeat bottom left; 
+	}
+
+	dd.seriesofpictures, li.seriesofpictures {
+		background: url(http://www.ericschrijver.nl/assets/seriesofpictures.png) no-repeat bottom left; 
+	}
+
+	dd.commodity, li.commodity {
+		background: url(http://www.ericschrijver.nl/assets/euro.png) no-repeat bottom left; 
+	}
+
+	dd.applied, li.applied {
+		background: url(http://www.ericschrijver.nl/assets/applied.png) no-repeat bottom left; 
+	}
+
+	dd.applied, li.applied {
+		background: url(http://www.ericschrijver.nl/assets/applied.png) no-repeat bottom left; 
+	}
+
+	dd.project, li.project {
+		background: url(http://www.ericschrijver.nl/assets/project.png) no-repeat bottom left; 
+	}
+
+	dd.piece, li.piece {
+		background: url(http://www.ericschrijver.nl/assets/piece.png) no-repeat bottom left; 
+	}
+    
+    dl.structure {
+        background: url(http://www.ericschrijver.nl/assets/project.png) no-repeat top left;
+    }
+
+    dl.social {
+        background: url(http://www.ericschrijver.nl/assets/person.png) no-repeat top left;
+    }
+    
+    dl.events {
+        background: url(http://www.ericschrijver.nl/assets/event.png) no-repeat top left;
+    }
+	
+/* --stop css defines icons that identify entries-- */
+
+/*
+.event dd {
+	background: url(http://www.ericschrijver.nl/assets/event.png) no-repeat top left;
+}*/
+
+/* --begin css oeuvre overzicht home page-- */    
+
+#home .pagina dl {
+    width: 50em;
+    height: 100%;
+    padding:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+}
+    
+#home .pagina dt {
+    z-index:500;
+    padding: 1em;
+    height: 8em;
+    min-width:8em;
+    background-color:white;
+    margin:0;
+    overflow: hidden;
+    clear: both;
+}
+
+#home .pagina dt a, #home .pagina dd a {
+    font-size:2em;
+    line-height:100%;
+    text-transform: lowercase;
+    font-variant: small-caps;
+} 
+    
+#home .pagina dd {
+    padding:1em;
+    float: left;
+    margin-left:0em;
+    margin-top:-12em;
+    width:14em;
+    height:10em;
+    text-align: right;
+    background-color:white;
+}
+    
+    #home .pagina dt.major {
+        margin-left:16em;
+        margin-right:14em;
+        height:20em;
+        width:32em;
+	}
+    
+    #home .pagina dd.project {
+        height:20em;
+        margin-top:-22em;        
+    }
+
+	#home .pagina dt.minor {
+        width:16em;
+		margin-left:0em;
+        margin-right:auto;
+        height:10em;
+        left:0;
+	}
+    
+    #home .pagina dd.piece {    
+        text-align: left;
+        margin-left:18em;
+        background-position:bottom right;
+    }
+
+	
+	#home .pagina dt.applied {
+		margin-left:48em;
+        height:10em;
+        width:16em;
+	}
+    
+/* --stop css oeuvre overzicht home page-- */
+
+/* --start css bilingual captions for soundrecordings-- */
+
+div.request {
+	background: url(10pikselverloop.png) repeat-x bottom left;
+}
+
+	.verborgen {
+		line-height:12pt;
+	}
+    
+    		.verborgen p {
+			width:38em;
+		}
+
+	.verborgen dl, .verborgen dt, .verborgen dd, .verborgen p, .verborgen h5, .verborgen dt p, .verborgen dd p {
+		margin:0;
+        width:100%
+	}
+
+	.verborgen dt, .verborgen dd {
+		padding:0;
+	}
+
+	.verborgen dd p {
+		text-indent:0;
+		font-style:italic;
+		color: #369aff;
+		margin-left:1em;
+	}
+    
+#tekstenuitleg .contextblok blockquote.altlang {
+	color: #808080;
+	font-style: italic;
+	font-size: 9pt;
+	line-height: 140%;
+}
+
+#tekstenuitleg .pagina blockquote.altlang {
+    color: #369aff;
+    margin-top:-82.5pt;
+    font-size:9pt;
+    margin-left:14pt;
+}
+
+/* --stop css bilingual captions for soundrecordings-- */
+
+/* nog wat meer ter zake doende kleuren. offwhite blauw: #fcfeff offblack blauw: 15293c 
+cOO #a50011 */
+
+
+/*
+img.zowiliknietsterven {
+	background-color:transparent;
+	background-image:none;
+	width:100%;
+	height:20px;
+	clip: rect(0px, 0px, 20px, 1px);
+}*/

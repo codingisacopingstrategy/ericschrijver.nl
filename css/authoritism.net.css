@@ -1,0 +1,58 @@
+body#authoritism {
+font-size:140%;
+line-height:120%;
+}
+
+body#authoritism div {
+position:static;
+background-image: none;
+}
+
+body#authoritism div.focus {
+position:static;
+padding-left:6em;
+padding-top:2em;
+}
+
+
+body#authoritism p {
+margin-bottom:.6em;
+margin-top:0;
+}
+
+body#authoritism h1, body#authoritism h2 {
+line-height:100%;
+}
+
+body#authoritism .contextbalk, body#authoritism .contextblok {
+font-size: 0.8em;
+line-height:100%;
+margin:0;
+}
+
+body#authoritism .contextblok {
+position: fixed;
+right:8%;
+}
+
+body#authoritism .contextbalk p, body#authoritism .contextblok p {
+}
+
+body#authoritism .contextbalk code, body#authoritism .contextblok code {
+font-size: 0.9em;
+}
+
+body#authoritism .comments {
+padding:1em;
+font-size:0.8em;    
+padding-left:4em;
+}
+
+body#authoritism hr {
+width:80;
+color:grey;
+}
+
+body#authoritism li {
+width:100%;
+}
