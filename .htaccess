@@ -9,7 +9,7 @@ deny from all
 </files>
 AddHandler php5-script .php
 
-Redirect /self /events/20101016
+Redirect /self.html http://ericschrijver.nl/events/20101016
 
 # Redirect www to non-www
 RewriteEngine on
