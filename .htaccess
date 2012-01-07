@@ -9,6 +9,8 @@ deny from all
 </files>
 AddHandler php5-script .php
 
+Redirect /self /events/20101016
+
 # Redirect www to non-www
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.ericschrijver.nl$ [NC]
