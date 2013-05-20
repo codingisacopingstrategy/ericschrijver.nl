@@ -10,6 +10,7 @@ deny from all
 AddHandler php5-script .php
 
 Redirect /self.html http://ericschrijver.nl/events/20101016
+Redirect /texts/ziggy_over_zarathustra.html http://i.liketightpants.net/and/i-like-ziggy-over-zarathustra
 
 # Redirect www to non-www
 RewriteEngine on
