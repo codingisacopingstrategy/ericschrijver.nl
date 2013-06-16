@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from time import strftime
 from lxml import etree, html
 from lxml.cssselect import CSSSelector
 import re
@@ -51,7 +52,8 @@ for i in b['items']:
     if n == 12:
         break
     dt = html.fragment_fromstring('<dt><a href="%s">%s</a></dt>' % (i['link'], i['title']))
-    dd = html.fragment_fromstring('<dd>%s</dd>' % (i['updated']))
+    updated_formatted = strftime( '%B %d, %Y', i['updated_parsed'])
+    dd = html.fragment_fromstring( '<dd>%s</dd>' % (updated_formatted) )
     pants_dl.append(dt)
     pants_dl.append(dd)
     n += 1

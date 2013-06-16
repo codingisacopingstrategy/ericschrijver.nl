@@ -1,0 +1,331 @@
+/*-- body elements --*/
+
+body {
+    background-color:white;  
+    font-family: 'CharterBT', Georgia, serif;
+    font-size: 68.75%;
+    font-weight: normal;
+    margin:0em;
+    color: black;
+    line-height: 140%;
+/*    background-image: url("http://ericschrijver.nl/css/grijs_32_16.png"); */
+}
+
+div {
+    margin:0em;
+    padding:1em;
+    border: 0em;
+    display:block;
+    position:absolute;
+    vertical-align:top;
+    z-index:100;
+    background-image:url("http://ericschrijver.nl/css/lijnen_20.png");
+}
+
+
+/*-- divisions --*/
+
+
+div.pagina {
+    left:1em;
+    top:2em;
+    margin-top:10em;
+    width: 49em;
+    background-image: none;
+    background-color:transparent;
+    z-index:200;
+}
+
+    #home .pagina dl {
+        background-image: url("http://ericschrijver.nl/css/lijnen_fd_20.png");
+    }
+
+
+div.header {
+    z-index:400;
+    width:49em;
+    left:1em;
+    top:1em;
+    margin-left:0em;
+    height:8em;
+}
+
+div.assets {
+    z-index:300;
+    top:2em;
+    left:5em;
+    padding:0;
+    width:16em;
+    height:auto;
+    margin-top:10em;
+    /* about margin-top: 10em; */
+    margin-left:64em;
+    color: #808080;
+
+}
+
+    #home {
+        display:block;
+    }
+
+/*-- text elements (p,blockquote) --*/
+
+p {
+    z-index:150;
+    font-size: 1.1em;
+    width: 25em;
+    padding: 0em 1em;
+    margin: 1em 0em;
+    text-align: left;
+    line-height:140%;
+    text-indent:-.5em;
+}
+
+        .assets p {
+            font-size: inherit;
+            width:14em; /* inherit-1em zou moeten kunnen kankertaal! */
+            text-align:left;
+        }
+        
+        #home .pagina p {
+            width:100%;
+            text-align:inherit;
+            padding:0;
+        }
+
+/*extWrap*/
+/*-- --*/
+
+/*-- headings --*/
+
+h1, h2, h3, h5 {
+    margin: 0.3em 0em 0.2em 0em;
+    font-weight: 400;
+    font-family: 'CharterBT', Georgia, serif;
+    color: #fd297e;
+    width:auto;
+    line-height: 140%;
+    letter-spacing:-.08em;
+    text-transform: lowercase;
+}
+
+h1 {
+    font-size: 4em;
+    line-height: 100%;
+    margin-top:0;
+}
+
+    #home .header h1, #home .header h2 {
+        display:inline;
+    }     
+
+h2 {
+    font-size: 2.25em;
+    line-height: 100%;
+    text-transform: lowercase;
+}
+
+h3 {
+    text-transform: lowercase;
+    font-size: 1.5em;
+}
+
+h5 {
+    text-transform: lowercase;
+    font-size: 1.25em;
+    font-style: italic;
+}
+
+/*-- lists and list elements --*/
+    
+dl {
+    list-style:none;
+    margin:0;
+    padding:1em;
+    padding-right:2.5em;
+    width: 12.5em;
+}
+
+dd,dt {
+    margin:0;
+    margin-bottom:0.5em;
+}
+    
+dt {
+    padding-left:.7em;
+    padding-right:.5em;
+    padding-bottom:.2em;
+}
+
+dd {
+    margin-left:.3em;
+    padding-left:2.1em;
+    padding-bottom:.8em;
+}
+    
+/*images */
+
+img {
+    display:block;
+    background-color:#fac8dc;
+    background-image: url("http://ericschrijver.nl/css/fill_10_roze.png");
+    margin:0em;
+    padding:0em;
+    border:0em;
+}
+
+a img {
+    border:0em;
+}
+
+#home .pagina dl img {
+    display: absolute;
+}
+
+img.pict {
+    background-color:transparent;
+    background-image:none;
+    margin-left:1em;
+}
+
+/*links*/
+
+a {
+    color: #fd297e;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    background-color:#fd297e;
+}
+
+:target {
+    border: .1em dashed #fffb00;
+}
+
+/*transforms*/
+
+a:hover {
+    color: white;
+    background-color:#fd297e;
+}
+
+/* --begin css oeuvre overzicht home page-- */    
+
+#home .pagina dl {
+    width: 50em;
+    height: 100%;
+    padding:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1em;
+}
+    
+#home .pagina dt {
+    z-index:500;
+    padding: 1em;
+    min-width:8em;
+    background-color:white;
+    overflow: hidden;
+    clear: both;
+    width:16em;
+    margin-left:0em;
+    margin-right:auto;
+    height:10em;
+    left:0;
+}
+
+#home .pagina dd a, #home .pagina2 dt a {
+    font-size:2em;
+    line-height:100%;
+    text-transform: lowercase;
+    font-variant: small-caps;
+} 
+    
+#home .pagina dd {
+    padding:.6em;
+    float: left;
+    margin-left:18em;
+    margin-top:-12em;
+    width:14em;
+    height:10em;
+    background-color:white;
+    text-align: left;
+    background-position:bottom right;
+}
+
+div.assets {
+    margin-left: 88em;
+    left: 10em;
+    padding: 1em 0 0 0;
+}
+
+div.pagina {
+    width: 40em;
+}
+
+#home .pagina dl {
+    width: 40em;
+}
+
+div.pagina2 {
+    left: 4em;
+    margin-left: 40em;
+    top: 2em;
+    margin-top: 10em;
+    padding: 1em 0 0 0;
+    width: 24em;
+}
+
+div.pagina3 {
+    left: 7em;
+    margin-left: 64em;
+    width: 24em;
+    top: 2em;
+    margin-top: 10em;
+    padding: 1em 0 0 0;
+}
+
+#home .pagina dl {
+    background-image: none;
+}
+
+.pagina2 dl, .pagina3 dl {
+    width: inherit;
+}
+
+#home .pagina2 dt {
+    padding-bottom: .7em;
+}
+
+#home .pagina2 dd {
+    padding-bottom: 1.5em;
+}
+
+.header img {
+    display: inline;
+}
+
+.header img.pict {
+  margin: 0 .2em;
+}
+div.header {
+  width: 100em;
+}
+
+div.header h2 {
+  margin-left: .6em;
+  margin-right: .6em;
+}
+
+/*
+img.zowiliknietsterven {
+    background-color:transparent;
+    background-image:none;
+    width:100%;
+    height:20px;
+    clip: rect(0px, 0px, 20px, 1px);
+}*/
+
+
