@@ -27,7 +27,8 @@ div {
 
 
 div.pagina {
-    left:1em;
+    left:2em;
+    margin-left: 32em;
     top:2em;
     margin-top:10em;
     width: 49em;
@@ -270,8 +271,8 @@ div.pagina {
 }
 
 div.pagina2 {
-    left: 4em;
-    margin-left: 40em;
+    left: 1em;
+    margin-left: 10em;
     top: 2em;
     margin-top: 10em;
     padding: 1em 0 0 0;
