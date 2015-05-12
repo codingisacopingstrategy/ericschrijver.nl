@@ -272,10 +272,9 @@ div.pagina {
 
 div.pagina2 {
     left: 1em;
-    margin-left: 10em;
+    margin-left: 0;
     top: 2em;
     margin-top: 10em;
-    padding: 1em 0 0 0;
     width: 24em;
 }
 
