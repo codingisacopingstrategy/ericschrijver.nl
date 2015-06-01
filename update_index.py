@@ -24,7 +24,8 @@ n = 0
 for i in a['items']:
     if n == 5:
         break
-    dt = html.fragment_fromstring('<dt><a href="%s">%s</a></dt>' % (i['link'], i['title']))
+    year = strftime( '%Y', i['updated_parsed'])
+    dt = html.fragment_fromstring('<dt><a href="%s">%s</a> %s</dt>' % (i['link'], i['title'], year))
     try:
         img = html.fragment_fromstring(i.content[0].value, "div").cssselect('img')[0]
         img.attrib['src'] = re.sub("[0-9]+x[0-9]+", "150x150", img.attrib['src'])
