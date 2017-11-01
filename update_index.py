@@ -30,17 +30,19 @@ design_dl = sel(htmltree)[0]
 design_dl.clear()
 
 # create the new html elements for design_dl and append them
-for post in design_feed['items'][:5]:
+for post in design_feed['items'][:4]:
     year = strftime( '%Y', post['updated_parsed'])
     dt = html.fragment_fromstring('<dt><a href="%s">%s</a> %s</dt>' % (post['link'], post['title'], year))
     try:
         # find the first image in the post’s content
         img = html.fragment_fromstring(post.content[0].value, "div").cssselect('img')[0]
         # it’s probably re-sized by WP to 620xsomething,
-        # change the img to the 150x150 thumbnail version
-        img.attrib['src'] = re.sub("[0-9]+x[0-9]+", "150x150", img.attrib['src'])
-        img.attrib['height'] = '150'
-        img.attrib['width'] = '150'
+        # we need to make sure it displays at the size we want
+        try:
+            del img.attrib["height"]
+        except KeyError:
+            pass
+        img.attrib['width'] = "264"
     except:
         continue
     design_dl.append(dt)
@@ -56,10 +58,33 @@ pants_dl = sel(htmltree)[0]
 pants_dl.clear()
 
 # create the new html elements for pants_dl and append them
-for post in pants_feed['items'][:12]:
-    dt = html.fragment_fromstring('<dt><a href="%s">%s</a></dt>' % (post['link'], post['title']))
+for post in pants_feed['items'][:5]:
     updated_formatted = strftime( '%B %d, %Y', post['updated_parsed'])
-    dd = html.fragment_fromstring( '<dd>%s</dd>' % (updated_formatted) )
+    dt = html.fragment_fromstring('<dt><a href="%s">%s</a> %s</dt>' % (post['link'], post['title'], updated_formatted))
+
+    try:
+        # find the first image in the post’s content
+        img = html.fragment_fromstring(post.content[0].value, "div").cssselect('img')[0]
+        # it’s probably sized at 830xsomething,
+        # we need to make sure it displays at the size we want
+        try:
+            del img.attrib["height"]
+        except KeyError:
+            pass
+        try:
+            del img.attrib["style"]
+        except KeyError:
+            pass
+        img.attrib['width'] = "264"
+    except:
+        continue
+
+    dd = html.Element('dd')
+    link = html.Element('a')
+    link.attrib['href'] = post['link']
+    link.append(img)
+    dd.append(link)
+
     pants_dl.append(dt)
     pants_dl.append(dd)
 

@@ -237,11 +237,10 @@ a:hover {
     left:0;
 }
 
-#home .pagina dd a, #home .pagina2 dt a {
-    font-size:2em;
+#home .pagina dd a, #home .pagina2 dt a, #home .pagina3 dt a {
+    font-size:1.6em;
     line-height:100%;
     text-transform: lowercase;
-    font-variant: small-caps;
 } 
     
 #home .pagina dd {
