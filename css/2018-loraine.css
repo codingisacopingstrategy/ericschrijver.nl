@@ -1,0 +1,230 @@
+/* réinitialisations de base, ne pas toucher */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    page-break-inside:avoid;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: 'PTserif';
+    src: url('../fonts/pt_serif-web-bold-webfont.woff2') format('woff2'),
+         url('../fonts/pt_serif-web-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTserif';
+    src: url('../fonts/pt_serif-web-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/pt_serif-web-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PTserif';
+    src: url('../fonts/pt_serif-web-italic-webfont.woff2') format('woff2'),
+         url('../fonts/pt_serif-web-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'PTserif';
+    src: url('../fonts/pt_serif-web-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pt_serif-web-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*GENERAL-*/
+
+body {
+    background-color:white;
+    font-family: 'PTserif', Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin:0em;
+    color: black;
+    line-height: 115%;
+    color: #fd297e;
+    padding: 30px;
+}
+
+/*TYPE*/
+
+a {
+    color: #fd297e;
+    text-decoration: underline;
+}
+h1 {
+    font-size: 1.5em;
+    line-height: 90%;
+    margin-top: 0;
+    font-weight: normal;
+}
+h1 a {
+    text-decoration: none;
+}
+h2, h3 {
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+h5 {
+    margin-top: 15px;
+}
+p {
+    margin-bottom: 15px;
+}
+ul li {
+    list-style: none;
+}
+.project-meta li {
+    margin-left: 15px;
+}
+dd {
+    margin-left: 15px;
+}
+.main-project p {
+    margin-bottom: 30px;
+}
+.project-content p {
+    font-size: 20px;
+    line-height: 125%;
+    color: black;
+}
+.project-meta {
+    font-size: 15px;
+    line-height: 130%;
+}
+.project-meta h2 {
+    font-size: 30px;
+    line-height: 110%;
+}
+.project-content figcaption p {
+    font-size: 15px;
+}
+.page .events dd {
+    margin-bottom: 15px;
+}
+/* .about-text {
+    color: black;
+} */
+
+/* IMG */
+.img-outline {
+    outline: #fd297e solid 0.5px;
+}
+.page img, .main-project img {
+    width: 100%;
+}
+img.img-landscape {
+    width: 75%;
+}
+figure {
+    margin-bottom: 30px;
+}
+figcaption .pdf {
+    float: right;
+}
+.main-project img, #archive dt img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.main-project img:hover, #archive dt img:hover {
+    -webkit-filter: none;
+    filter: none;
+    outline: #fd297e solid 0.5px;
+}
+
+/* LAYOUT */
+.page {
+    max-width: 1000px;
+}
+.header {
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+.header h1, .header h2 {
+    display:inline;
+    font-weight: normal;
+    /* text-transform: lowercase; */
+}
+.header h2 {
+    padding-left: 20px;
+    text-transform: lowercase;
+    margin-top: 0px;
+    white-space: nowrap;
+}
+.header .pict {
+    width: 16px;
+    padding-right: 5px;
+}
+.main-project {
+    max-width: 900px;
+    margin-bottom: 60px;
+}
+.project-info, .project-content, .about-text {
+    max-width: 70%;
+}
+.project-meta {
+    max-width: 25%;
+    margin-left: 3%;
+}
+.project-info, .project-content, .project-meta, .about-text {
+    display: inline-block;
+    vertical-align: top;
+}
+#archive .page dt {
+    width: 20%;
+    display: inline-block;
+    margin: 30px 0;
+    margin-right: 15px;
+}
+#archive .page dd {
+    width: 75%;
+    display: inline-block;
+    margin: 30px 0;
+    vertical-align: top;
+}
+#archive .page dd h3 {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 90%;
+    }
+    .header h2 {
+        font-size: 20px;
+        padding: 0 15px 0 0;
+        margin-bottom: 0;
+    }
+    .project-info, .project-content, .about-text {
+        max-width: 100%;
+    }
+    .project-meta {
+        max-width: 200px;
+        margin-left: 0%;
+        margin-top: 30px;
+    }
+    #archive .page dt {
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+    #archive .page dd {
+        margin: 10px 0 0 0;
+    }
+}
