@@ -1,79 +1,82 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import os
 import re
-from SimpleHTTPServer import SimpleHTTPRequestHandler
-import SocketServer
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+
 
 class MultiViewHandler(SimpleHTTPRequestHandler):
-    def send_head(self):
-        """Common code for GET and HEAD commands.
+    """
+    This implementation is just like the standard
+    SimpleHTTPRequestHandler, except that it emulates
+    Apache MultiViews for local development.
 
-        This sends the response code and MIME headers.
+    When a requested file is not found, it searches the
+    same directory for files with the same basename plus
+    any extension.
 
-        Return value is either a file object (which has to be copied
-        to the outputfile by the caller unless the command was HEAD,
-        and must be closed by the caller under all circumstances), or
-        None, in which case the caller has nothing further to do.
+    Example:
 
-        This implementation is just like the method on the standard
-        SimpleHTTPRequestHandler, except that it includes an emulation
-        of Apache’s MultiViews: when it can’t find a file, it will
-        look in the corresponding folder for a file with that name
-        plus an extension.
-        
-        So
-        
         /blabla/bla/foo
-        
-        can map to
-        
+
+    can resolve to:
+
         /blabla/bla/foo.png
         /blabla/bla/foo.html
-        
-        etc
-        
-        (If there’s multiple matches, this implementation returns the 1st)
-        """
+
+    If multiple matches exist, the first match is returned.
+    """
+
+    def send_head(self):
         path = self.translate_path(self.path)
-        f = None
+
         if os.path.isdir(path):
-            for index in "index.html", "index.htm":
-                index = os.path.join(path, index)
-                if os.path.exists(index):
-                    path = index
+            for index in ("index.html", "index.htm"):
+                index_path = os.path.join(path, index)
+                if os.path.exists(index_path):
+                    path = index_path
                     break
             else:
                 return self.list_directory(path)
+
         if not os.path.exists(path):
             search_dir, search_file = os.path.split(path)
-            find_f = re.compile("^" + search_file + "\.[^\.]+$")
-            for s in os.listdir(search_dir):
-                if find_f.match(s):
-                    path = os.path.join(search_dir, s)
-                    break
-        ctype = self.guess_type(path)
-        if ctype.startswith('text/'):
-            mode = 'r'
-        else:
-            mode = 'rb'
-        try:
-            f = open(path, mode)
-        except IOError:
+
+            if os.path.isdir(search_dir):
+                pattern = re.compile(r"^" + re.escape(search_file) + r"\.[^\.]+$")
+                for entry in os.listdir(search_dir):
+                    if pattern.match(entry):
+                        path = os.path.join(search_dir, entry)
+                        break
+
+        if not os.path.exists(path):
             self.send_error(404, "File not found")
             return None
+
+        ctype = self.guess_type(path)
+
+        try:
+            f = open(path, "rb")
+        except OSError:
+            self.send_error(404, "File not found")
+            return None
+
         self.send_response(200)
         self.send_header("Content-type", ctype)
         self.end_headers()
         return f
 
+
 PORT = 8000
 
-Handler = MultiViewHandler
 
-httpd = SocketServer.TCPServer(("", PORT), Handler)
+def run():
+    server_address = ("", PORT)
+    httpd = ThreadingHTTPServer(server_address, MultiViewHandler)
+    print(f"Serving at port {PORT}")
+    httpd.serve_forever()
+
 
 if __name__ == "__main__":
-    print "serving at port", PORT
-    httpd.serve_forever()
+    run()
