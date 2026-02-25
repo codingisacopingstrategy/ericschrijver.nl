@@ -1,0 +1,47 @@
+# GENERIC #
+
+# Developer's environment specific files
+build.properties
+deploy.properties
+
+# IntelliJ files
+*.iml
+.idea
+
+# Eclipse files
+.classpath
+.project
+.metadata
+.settings/
+.tern-project
+.springBeans
+
+# More IDEs and editors
+.c9/
+*.launch
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# Temporary and backup files
+*~
+.~lock.*#
+
+# System files
+.DS_Store
+Thumbs.db
