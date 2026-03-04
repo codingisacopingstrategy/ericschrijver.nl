@@ -96,10 +96,14 @@ dd {
 .main-project p {
     margin-bottom: 30px;
 }
-.project-content p {
+.project-content p, .project-content blockquote {
     font-size: 20px;
     line-height: 125%;
     color: black;
+}
+.project-content blockquote {
+    border-left: 20px solid #fd297e;
+    padding-left: 20px;
 }
 .project-meta {
     font-size: 15px;
