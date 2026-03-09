@@ -17,7 +17,6 @@
     <link rel="alternate" type="application/atom+xml" title="Recent Updates" href="http://www.ericschrijver.nl/atom.xml" />
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/eric2010.js"></script>
 
     <meta property="og:title" content="I like tight pants and mathematics" />
     <meta property="og:image" content="https://ericschrijver.nl/assets/iliketightpants-og.jpg" />
@@ -40,15 +39,9 @@
 
     </div>
     <style>
-        .project-content.hide-french p[lang=fr], .project-content.hide-french a#language-show-english {
-            display: none;
-        }
-        .project-content.hide-english p[lang=en], .project-content.hide-english a#language-show-french {
-            display: none;
-        }
     </style>
 
-    <div class="project-content">
+    <div class="project-content hide-french">
         <figure>
             <img src="assets/ILIKE-COM-31.png">
             <figcaption>
@@ -116,21 +109,7 @@
 
 </div><!-- end div page -->
 
-<script>
-    function showEnglish(e) {
-        if (e) e.preventDefault();
-        document.querySelector(".project-content").classList.remove("hide-english");
-        document.querySelector(".project-content").classList.add("hide-french");
-    }
-    function showFrench(e) {
-        if (e) e.preventDefault();
-        document.querySelector(".project-content").classList.remove("hide-french");
-        document.querySelector(".project-content").classList.add("hide-english");
-    }
-    document.getElementById("language-show-english").addEventListener("click", showEnglish);
-    document.getElementById("language-show-french").addEventListener("click", showFrench);
-    showEnglish();
-</script>
+<script type="text/javascript" src="/js/eric2010.js"></script>
 
 <!-- Piwik ( Piwik is open source and runs on your own server. Why give all this data to Google? – Eric )-->
 <script type="text/javascript">

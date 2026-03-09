@@ -122,6 +122,12 @@ dd {
 /* .about-text {
     color: black;
 } */
+.project-content.hide-french p[lang=fr], .project-content.hide-french a#language-show-english {
+    display: none;
+}
+.project-content.hide-english p[lang=en], .project-content.hide-english a#language-show-french {
+    display: none;
+}
 
 /* IMG */
 .img-outline {
