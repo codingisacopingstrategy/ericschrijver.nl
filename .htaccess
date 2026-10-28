@@ -9,6 +9,9 @@ deny from all
 </files>
 AddHandler php5-script .php
 
+# Hide .git directory (and related files like .gitignore)
+RedirectMatch 404 /\.git
+
 Redirect /self.html http://ericschrijver.nl/events/20101016
 Redirect /texts/ziggy_over_zarathustra.html http://i.liketightpants.net/and/i-like-ziggy-over-zarathustra
 
